@@ -70,12 +70,13 @@ export default async (url) =>
     * ! WARNING MAKE AN EDIT : node_modules/.pnpm/puppeteer-core@19.7.4/node_modules/puppeteer-core/lib/esm/puppeteer/common/LifecycleWatcher.js:170:12
     * ! CHANGE return new TimeoutError(errorMessage) to return console.error(errorMessage)
     * ! Even if we add the property waitUntil: "networkIdle0" or "networkIdle2", that throwing an error and stop the server
+    * ! It's because youtube is constantly loading requests (due to video fragments, trackers, audio ect...) so you have to put a timer
     * ! I found this issue : https://github.com/puppeteer/puppeteer/issues/3238 but no PR has been allowed Sadge
     */
     await page.goto(url, { timeout: 5000 })
     .catch(e => { console.error(e) });
 
-    // 166 minutes "max". Can be changed without issue (need better explication on getting range)
+    // (need better explication on getting range)
     result = result.replace(/range=[0]-[0-9]{1,10}/, 'range=0-9999999999999');
 
     await page.close();
