@@ -1,0 +1,32 @@
+<head>
+    <link rel="stylesheet" href="css/iziToast.min.css">
+</head>
+<script src="js/iziToast.min.js"></script>
+
+<% if(success_msg != '') { %>
+    <div class="success" id="success"></div>
+    <script>
+        iziToast.success({
+            title: "Success :",
+            message: `<%= success_msg %>`,
+            timeout: 5000
+        });
+        setTimeout(() => {
+            document.getElementById('success').remove();
+        } , 5500);
+    </script>
+<% } %>
+
+<% if(error_msg != '') { %>
+    <div class="error" id="error"></div>
+    <script>
+        iziToast.error({
+            title: "Error :",
+            message: `<%= error_msg %>`,
+            timeout: 5000
+        });
+        setTimeout(() => {
+            document.getElementById('error').remove();
+        } , 5500);
+    </script>
+<% } %>

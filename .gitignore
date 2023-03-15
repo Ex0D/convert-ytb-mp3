@@ -1,0 +1,8 @@
+# node_modules ignored
+node_modules
+
+# Vscode config ignored
+.vscode
+
+# Folder that contains temp file or .mp3
+audio
