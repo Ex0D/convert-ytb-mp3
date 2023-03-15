@@ -1,4 +1,4 @@
-**THIS README IS INCOMPLETE FOR THE TIME (there are things missing to say)**
+**THIS README IS INCOMPLETE RIGHT NOW (there are things missing to say)**
 
 # Youtube link to MP3 file converter
 
