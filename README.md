@@ -4,12 +4,6 @@
 
 A (bad) converter taking a Youtube link and turning it into .mp3 without the use of external google api
 
-## TODO
-- [ ] Remux .weba file into .mp3 (with FFMPEG ?)
-- [ ] Better error handling
-- [ ] Better comments
-- [ ] CLI option
-
 ## How to use it ?
 1. Copy this repo 
 ```shell
