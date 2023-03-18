@@ -79,7 +79,6 @@ export default async (url) =>
     // (need better explication on getting range)
     result = result.replace(/range=[0]-[0-9]{1,10}/, 'range=0-9999999999999');
 
-    await page.close();
     return result;
 }
 
