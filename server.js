@@ -76,7 +76,7 @@ app.post('/', async (req, res) =>
     const urlFinder = await webAFinder(postURL);
     await downloadSource(urlFinder);
 
-    req.flash('success_msg', 'WebA Downloaded !');
+    req.flash('success_msg', '.weba downloaded and renamed in .mp3 file !');
     res.redirect('/');
 });
 
