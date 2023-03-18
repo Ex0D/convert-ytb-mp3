@@ -18,8 +18,12 @@ pnpm install
 ```shell
 node server.js
 ```
+or
+```shell
+pnpm run start #npm run start work too
+```
 
-4. Go to you'r [localhost](http://localhost:3000) page and type the Youtube URL you want to download.
+4. Go to you'r [localhost](http://localhost:3000) (port 3000 by default) page and type the Youtube URL you want to download.
 
 5. Wait ~ 5 seconds
 
@@ -91,4 +95,4 @@ Unless the internet protocols change, you are in fact more powerful than a simpl
 
 On these beautiful philosophical words, have a good day if you go through this repo, whether you are from google, amazon or any other
 
-o/  
+o/
