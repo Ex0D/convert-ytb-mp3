@@ -15,7 +15,13 @@ export default async (url) =>
     // TODO add error catcher (maybe try/catch ?)
     https.get(url, (res) =>
     {
-        res.pipe(file);
+        try
+        {
+            res.pipe(file);
+        } catch (e)
+        {
+            throw new Error('Something went wrong when piping the file :' + e);
+        }
 
         file.on('finish', () =>
         {

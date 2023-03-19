@@ -73,11 +73,18 @@ app.post('/', async (req, res) =>
         return res.redirect('/');
     }
 
-    const urlFinder = await webAFinder(postURL);
-    await downloadSource(urlFinder);
+    try 
+    {
+        const urlFinder = await webAFinder(postURL);
+        await downloadSource(urlFinder);
 
-    req.flash('success_msg', '.weba downloaded and renamed in .mp3 file !');
-    res.redirect('/');
+        req.flash('success_msg', '.weba downloaded and renamed in .mp3 file !');
+        return res.redirect('/');
+    } catch (e) 
+    {
+        req.flash('error_msg', 'Something went wrong : ' + e);
+        return res.redirect('/');
+    }
 });
 
 app.listen(PORT, () =>
