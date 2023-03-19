@@ -6,3 +6,6 @@ node_modules
 
 # Folder that contains temp file or .mp3
 audio
+
+# Tests folder
+test
