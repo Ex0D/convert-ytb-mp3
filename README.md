@@ -4,7 +4,8 @@
 
 A (bad) converter taking a Youtube link and turning it into .mp3 without the use of external google api
 
-## How to use it ?
+## How to use it (Web view) ?
+<!-- ### Webview -->
 1. Copy this repo 
 ```shell
 git clone https://github.com/Ex0D/convert-ytb-mp3.git
@@ -29,6 +30,8 @@ pnpm run start #npm run start work too
 
 6. Done ! 
 Check your audio folder !
+
+<!-- ### How to use it (CLI Option) -->
 
 ## How does it work ? 
 
@@ -76,17 +79,6 @@ Here is how to download the audio from a youtube link.
 - [body-parser](https://www.npmjs.com/package/body-parser) - Parse incoming request bodies in a middleware before your handlers, available under the `req.body` property (Unfortunately, it is mandatory to use it)
 - [express-session](https://www.npmjs.com/package/express-session/v/1.15.6) - (wtf ? see bellow)
 - [connect-flash](https://www.npmjs.com/package/connect-flash) - The flash is a special area of the session used for storing messages. Messages are written to the flash and cleared after being displayed to the user. The flash is typically used in combination with redirects, ensuring that the message is available to the next page that is to be rendered. (that's why express-session is required)
-
-<!-- ## So why it's bad ?
-...
-
-## Some Warning 
-...
-
-## A little diagram of how the program works
-```mermaid
-stateDiagram-v2
-``` -->
 
 ## Conclusion
 As long as Youtube (or even another platform offering videos/images/sounds on the Internet) offers their content in a public way (i.e. without protection by login or other), there will always be a way to automate the thing, they can always change their structures, their API, the way they design their products, EVERYTHING is available no matter what and there will inevitably be people like me who will say "go automate this or that".

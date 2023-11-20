@@ -63,7 +63,7 @@ app.get('/', (req, res) =>
 app.post('/', async (req, res) =>
 {
     const postURL = req.body.input_link;
-    if 
+    if
     (
         !postURL ||
         !postURL.match(/https:\/\/www\.youtube\.com\/watch\?v=[a-zA-Z]{1,20}/)
@@ -73,14 +73,15 @@ app.post('/', async (req, res) =>
         return res.redirect('/');
     }
 
-    try 
+    try
     {
         const urlFinder = await webAFinder(postURL);
         await downloadSource(urlFinder);
 
         req.flash('success_msg', '.weba downloaded and renamed in .mp3 file !');
         return res.redirect('/');
-    } catch (e) 
+    }
+    catch (e)
     {
         req.flash('error_msg', 'Something went wrong : ' + e);
         return res.redirect('/');

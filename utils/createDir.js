@@ -11,5 +11,5 @@ export default (path) =>
     {
         // Avoid throw error "EEXIST: dir already exist"
         return;
-    })
+    });
 };
