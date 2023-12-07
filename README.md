@@ -1,6 +1,4 @@
-**THIS README IS INCOMPLETE RIGHT NOW (there are things missing to say)**
-
-# Youtube link to MP3 file converter
+# Youtube link to MP3 file converter (deprecated)
 
 A (bad) converter taking a Youtube link and turning it into .mp3 without the use of external google api
 
@@ -79,10 +77,6 @@ Here is how to download the audio from a youtube link.
 - [body-parser](https://www.npmjs.com/package/body-parser) - Parse incoming request bodies in a middleware before your handlers, available under the `req.body` property (Unfortunately, it is mandatory to use it)
 - [express-session](https://www.npmjs.com/package/express-session/v/1.15.6) - (wtf ? see bellow)
 - [connect-flash](https://www.npmjs.com/package/connect-flash) - The flash is a special area of the session used for storing messages. Messages are written to the flash and cleared after being displayed to the user. The flash is typically used in combination with redirects, ensuring that the message is available to the next page that is to be rendered. (that's why express-session is required)
-
-## Conclusion
-As long as Youtube (or even another platform offering videos/images/sounds on the Internet) offers their content in a public way (i.e. without protection by login or other), there will always be a way to automate the thing, they can always change their structures, their API, the way they design their products, EVERYTHING is available no matter what and there will inevitably be people like me who will say "go automate this or that".
-
 Unless the internet protocols change, you are in fact more powerful than a simple user on a browser, the browser is a gigantic debugger, it remains to know how to use it well.
 
 On these beautiful philosophical words, have a good day if you go through this repo, whether you are from google, amazon or any other
